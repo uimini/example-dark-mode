@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector("#switch-dark-mode").addEventListener("click",(function(){document.body.classList.toggle("isDark")}))})();
