@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html class="ui-html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dark mode uimini</title>
+    <meta
+      name="description"
+      content="Example dark-mode ui-kit build with uimini"
+    />
+    <!-- font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"
+    />
+  </head>
+  <!-- body -->
+  <body class="ui-body isDark">
+    <div class="ui-wrapper">
+      <!-- header start -->
+      <header>
+        <section class="ui-section">
+          <div class="ui-container">
+            <div class="flex justify-between items-center">
+              <a class="ui-button isLink" href="#">logo</a>
+              <div class="ui-button-group">
+                <a href="#" class="ui-link">Link</a>
+                <a href="#" class="ui-link">Link</a>
+                <a href="#" class="ui-button isPrimary">Action</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <!-- header end -->
+
+      <!-- content start -->
+      <div class="ui-content-wrapper">
+        <!-- switcher #1 -->
+        <section
+          class="ui-section flex items-center text-center"
+          style="min-height: 60vh"
+        >
+          <div class="ui-container">
+            <h1 class="ui-title-1">Hello dark mode</h1>
+            <p class="mb-2">
+              This page is example of dark mode build with
+              <a class="ui-link" href="https://uimini.github.io/docs/"
+                >Uimini</a
+              >
+            </p>
+            <div class="ui-switch">
+              <input type="checkbox" id="switch-dark-mode" checked />
+              <label for="switch-dark-mode">Switch dark-mode</label>
+            </div>
+          </div>
+        </section>
+
+        <!-- buttons -->
+        <section class="ui-section text-center" style="margin: 0 auto">
+          <div class="ui-container">
+            <h2 class="ui-title-2">Button</h2>
+            <div class="ui-button-group mb-4">
+              <button class="ui-button isDefault">Default</button>
+              <button class="ui-button isPrimary">Primary</button>
+              <button class="ui-button isSuccess">Success</button>
+              <button class="ui-button isWarning">Warning</button>
+              <button class="ui-button isDangerous">Dangerous</button>
+            </div>
+
+            <div class="ui-button-group mb-4">
+              <button class="ui-button isOutline isDefault">Default</button>
+              <button class="ui-button isOutline isPrimary">Primary</button>
+              <button class="ui-button isOutline isSuccess">Success</button>
+              <button class="ui-button isOutline isWarning">Warning</button>
+              <button class="ui-button isOutline isDangerous">Dangerous</button>
+            </div>
+
+            <p>
+              Find more examples
+              <a
+                href="https://uimini.github.io/docs/docs/button.html"
+                class="ui-link"
+                >Here</a
+              >
+            </p>
+          </div>
+        </section>
+
+        <!-- card -->
+        <section class="ui-section text-center" style="margin: 0 auto">
+          <div class="ui-container">
+            <h2 class="ui-title-2">Card</h2>
+            <div class="ui-card mb-4" style="width: 20rem">
+              <svg
+                class="bd-placeholder-img"
+                width="100%"
+                height="180"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Image cap"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="ui-card-body">
+                <span class="ui-title-3">Some title</span>
+                <p class="mb-2">
+                  Some quick example text to build on the card title
+                </p>
+                <div class="ui-button-group isCenter">
+                  <a href="#" class="ui-button isLink">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              Find more examples
+              <a
+                href="https://uimini.github.io/docs/docs/card.html"
+                class="ui-link"
+                >Here</a
+              >
+            </p>
+          </div>
+        </section>
+
+        <!-- table -->
+        <section class="ui-section text-center" style="margin: 0 auto">
+          <div class="ui-container">
+            <h2 class="ui-title-2">Table</h2>
+
+            <div class="table-wrapper mb-4">
+              <table class="ui-table isHover">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tomas</td>
+                    <td>Male</td>
+                    <td>26</td>
+                  </tr>
+                  <tr>
+                    <td>Jack</td>
+                    <td>Male</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>Anne</td>
+                    <td>Female</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>Jane</td>
+                    <td>Female</td>
+                    <td>19</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              Find more examples
+              <a
+                href="https://uimini.github.io/docs/docs/table.html"
+                class="ui-link"
+                >Here</a
+              >
+            </p>
+          </div>
+        </section>
+
+        <!-- form -->
+        <section class="ui-section text-center" style="margin: 0 auto">
+          <div class="ui-container">
+            <h2 class="ui-title-2">Form</h2>
+
+            <form
+              class="mb-4"
+              style="
+                background: var(--ui-g-100);
+                padding: 1rem;
+                max-width: 520px;
+              "
+            >
+              <!-- group #1 -->
+              <div class="ui-input-group" style="margin-bottom: 1rem">
+                <div class="ui-input isRequired">
+                  <label for="input-Iq1">Name</label>
+                  <input
+                    id="input-Iq1"
+                    type="text"
+                    value=""
+                    placeholder="Enter name here"
+                  />
+                </div>
+                <div class="ui-input isRequired">
+                  <label for="input-Iq2">Surname</label>
+                  <input
+                    id="input-Iq2"
+                    type="text"
+                    value=""
+                    placeholder="Enter surname here"
+                  />
+                </div>
+              </div>
+              <!-- group #2 -->
+              <div
+                class="ui-input-group isHorizontal"
+                style="margin-bottom: 1rem; width: 100%"
+              >
+                <div class="ui-input isRequired">
+                  <label for="input-Lx1">Age</label>
+                  <input
+                    id="input-Lx1"
+                    type="number"
+                    value="32"
+                    placeholder="Enter age here"
+                  />
+                </div>
+                <div class="ui-input">
+                  <label for="input-Lx2">Address</label>
+                  <input
+                    id="input-Lx2"
+                    type="text"
+                    value=""
+                    placeholder="Enter address here"
+                  />
+                </div>
+              </div>
+              <!-- group #3 -->
+              <div
+                class="ui-input-group isHorizontal"
+                style="margin-bottom: 1rem; width: 100%"
+              >
+                <select class="ui-select" name="select-XAq1">
+                  <option value="option0" selected disabled>
+                    Choice gender
+                  </option>
+                  <option value="orange">Male</option>
+                  <option value="mango">Female</option>
+                </select>
+                <select class="ui-select isLoading" name="select-XAq2">
+                  <option value="test-loading" selected>Loading</option>
+                </select>
+              </div>
+              <!-- group #4 -->
+              <div
+                class="ui-input-group"
+                style="margin-bottom: 1rem; width: 100%"
+              >
+                <div class="ui-switch">
+                  <input type="checkbox" id="switch-DA1" />
+                  <label for="switch-DA1">Subscribe to news</label>
+                </div>
+              </div>
+              <!-- group #5 -->
+              <!-- note: here's button group! -->
+              <div class="ui-button-group isRight">
+                <button class="ui-button isDefault">Cancel</button>
+                <button class="ui-button isPrimary">Send</button>
+              </div>
+            </form>
+
+            <p>
+              Find more examples
+              <a
+                href="https://uimini.github.io/docs/docs/input-group.html"
+                class="ui-link"
+                >Here</a
+              >
+            </p>
+          </div>
+        </section>
+
+        <!-- content end -->
+      </div>
+
+      <!-- footer -->
+      <footer class="ui-section">
+        <div class="ui-container">
+          <!-- text -->
+          <div class="text-center" style="max-width: 920px; margin: 0 auto">
+            <div class="ui-card-body">
+              <span class="ui-title-2">Uimini resourses</span>
+              <p class="mb-4">
+                This page is example build with
+                <a class="ui-link" href="https://uimini.github.io/docs/"
+                  >Uimini</a
+                >
+              </p>
+
+              <p class="mb-4">
+                Get started Uimini with dark-mode explore more
+                <a
+                  class="ui-link"
+                  href="https://uimini.github.io/docs/docs/dark-mode"
+                  >in documentation.</a
+                >
+              </p>
+
+              <!-- Main links -->
+              <div class="ui-button-group isCenter">
+                <a
+                  href="https://uimini.github.io/docs/"
+                  class="ui-button isDefault"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Documentation
+                </a>
+                <a
+                  href="https://github.com/uimini/uimini"
+                  class="ui-button isDefault"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                  Github
+                </a>
+                <a
+                  href="https://github.com/uimini/uimini/releases/latest"
+                  class="ui-button isDefault"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download last realize
+                </a>
+              </div>
+
+              <br />
+
+              <!-- Additional links -->
+              <p class="ui-title-3">Additional links:</p>
+              <div class="ui-button-group isCenter">
+                <a
+                  href="https://github.com/uimini/example-dark-mode"
+                  class="ui-link"
+                  >Github of this page</a
+                >
+                <a
+                  href="https://github.com/uimini/example-dark-mode/releases/tag/v1"
+                  class="ui-link"
+                  ><b>Download this page</b></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end main wrapper -->
+    </div>
+  </body>
+</html>
